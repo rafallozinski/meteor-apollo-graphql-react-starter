@@ -1,0 +1,15 @@
+type Address {
+  _id: String!
+  city: String!
+  postcode: String
+  active: Boolean
+}
+
+extend type Query {
+  addresses: [Address]
+}
+
+extend type Mutation {
+  createAddress(city: String!, postcode: String, customerId: String!): Address
+  toggleAddressActive(addressId: String!): Address
+}

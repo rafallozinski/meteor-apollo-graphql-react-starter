@@ -1,0 +1,41 @@
+// colors
+
+// color definitions
+$color-white: #FFFFFF;
+$color-black: #000000;
+$color-gray-dark: #333333;
+$color-gray-medium: #666666;
+$color-gray-light: #CCCCCC;
+$color-gray-pale: #F0F0F0;
+$color-pink-graphql: #E535AB;
+
+// color assignments
+// app
+$app-color-background: $color-white;
+// app header
+$app-header-color-background: $color-pink-graphql;
+$app-header-color-heading: $color-white;
+$app-header-color-base: $color-white;
+// app content
+$app-content-color-background: $color-white;
+$app-list-item-color-background: $color-gray-pale;
+// forms
+$app-form-button-color-background: $color-gray-light;
+// app footer
+$app-footer-color-background: $color-white;
+$app-footer-color-heading: $color-gray-dark;
+$app-footer-color-base: $color-gray-dark;
+
+
+// forms
+$form-input-border: 1px solid $color-gray-light;
+
+
+// fonts
+
+// font definitions
+$font-family-calibri: Calibri, Arial, sans-serif;
+
+// font assignments
+$font-family-base: $font-family-calibri;
+$font-family-heading: $font-family-calibri;

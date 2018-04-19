@@ -1,0 +1,16 @@
+meteor-base
+mobile-experience
+mongo
+static-html
+tracker
+
+standard-minifier-css
+standard-minifier-js
+es5-shim
+ecmascript
+shell-server
+
+fourseven:scss
+barbatus:typescript
+accounts-password
+apollo                  # Apollo Client integration

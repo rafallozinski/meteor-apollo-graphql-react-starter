@@ -1,0 +1,14 @@
+type Customer {
+  _id: String!
+  name: String!
+  active: Boolean
+  addresses: [Address]
+}
+
+type Query {
+  customers: [Customer]
+}
+
+type Mutation {
+  createCustomer(name: String!): Customer
+}

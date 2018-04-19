@@ -1,0 +1,187 @@
+@import './variables';
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  background-color: $app-color-background;
+  font-family: $font-family-base;
+}
+
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+
+  li {
+    padding-left: 1.2em;
+  }
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family-heading;
+  margin-bottom: 0;
+}
+
+
+p, a {
+  font-family: $font-family-base;
+}
+
+
+input {
+  padding: 0.5em;
+  border: none;
+  font-family: $font-family-base;
+}
+
+
+button {
+  padding: 0.5em;
+  border: none;
+  background-color: $app-form-button-color-background;
+  height: 2.5em;
+}
+
+header {
+  &.app-header {
+    background-color: $app-header-color-background;
+    margin: 0;
+    padding: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    div {
+      &.heading {
+        h1 {
+          color: $app-header-color-heading;
+        }
+        
+        p {
+          color: $app-header-color-base;
+        }
+      }
+      
+      &.user {
+        display: flex;
+        flex-direction: row;
+        
+        form {
+          display: flex;
+          flex-direction: row;
+          
+          input {
+            border: none;
+            width: 10em;
+          }
+
+          input + * {
+            margin-left: 0.5em;
+          }
+  
+          button {
+            width: 10em;
+          }
+        }
+
+        form + form {
+          margin-top: 0.5em;
+        }
+      }
+    }
+  }
+}
+
+
+main {
+  &.app-content {
+    background-color: $app-content-color-background;
+    margin: 0;
+    padding: 2em;
+
+    h2 {
+      margin-top: 1em;
+      margin-bottom: 0.5em;
+    }
+
+    input {
+      border: none;
+      width: 10em;        
+    }
+
+    input + * {
+      margin-left: 0.5em;
+    }    
+
+    ul {
+      li {
+        background-color: $app-list-item-color-background;
+        padding: 1em;
+
+        h3 {
+          margin-bottom: 0.5em;
+        }
+
+        ul {
+          margin-top: 0.5em;
+          margin-bottom: 0.5em;
+          list-style-type: none;
+          
+          li {
+            padding: 0;
+            margin: 0;
+            display: flex;
+
+            div {
+              padding: 0;
+              margin: 0;
+
+            }
+          }
+        }
+      }
+
+      li + li {
+        margin-top: 0.5em;
+      }
+    }
+
+    input {
+      border: $form-input-border;
+    }
+  }
+}
+
+
+footer {
+  &.app-footer {
+    background-color: $app-footer-color-background;
+    margin: 0;
+    padding: 2em;
+
+    hr {
+      border: none;
+      width: 100%;
+      height: 1px;
+      background-color: $app-footer-color-base;
+      margin-bottom: 1em;
+    }
+  
+    p {
+      color: $app-footer-color-base;
+    }
+  }
+
+}
